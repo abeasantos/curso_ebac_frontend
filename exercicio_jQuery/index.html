@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tarefas</h1>
+        </header>
+
+        <form id="form-lista">
+            <h2>O que quer fazer hoje?</h2>
+            <input type="text" id="novo-item" required placeholder="Digite o item">
+            <button type="submit">Adicionar na lista</button>
+            <button type="reset" id="botao-apagar">Apagar</button>
+        </form>
+
+        <ul id="lista-tarefas"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

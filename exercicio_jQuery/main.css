@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 219, 219, 0.5);
+    font-family: "Merriweather", serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+header h1 {
+    background-color: #fff;
+    font-family: "Playfair Display", serif;
+    padding: 16px;
+    border: 1px solid #000000c7;
+    text-transform: uppercase;
+}
+
+#form-lista {
+    background-color: #f09ee5c8;
+    color: #fff;
+    border: 1px solid #000000c7;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+input,
+button {
+    padding: 10px;
+    margin: 16px 6px 0;
+}
+
+button {
+    background-color: #000000c7;
+    border: none;
+    border-radius: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+#botao-apagar {
+    background-color: #700202da;
+}
+
+ul {
+    list-style: disc; 
+    padding-left: 40px; 
+    margin-top: 20px;
+    color: #321a01ca;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+li {
+    display: list-item; 
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    position: relative;
+}
+
+.check-list {
+    font-size: 20px;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.riscar .check-list {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.remover {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.remover:hover {
+    color: darkred;
+    transform: translateY(-50%) scale(1.2);
+}
